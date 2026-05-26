@@ -13,7 +13,7 @@ Robotic systems are increasingly targeted by sophisticated cyberattacks, but tra
 2. **Efficient Equilibrium Computation** – Novel algorithms for computing **Stackelberg equilibrium** (avoiding bilinear constraints via enumeration and linearization) and **Double Oracle** (achieving 100–1000× speedup for large games).
 3. **Learning Dynamics** – Implementation of five learning algorithms (Fictitious Play, Exp3, UCB, Hedge, MADDPG) with convergence guarantees to correlated equilibria.
 4. **Advanced Game Models** – Support for **Mean Field Games** (scaling to 10,000+ agents), mechanism design for bug bounty programs, and differential games for pursuit-evasion.
-5. **Comprehensive Evaluation** – Experiments on 156 real CVEs from the RVD show that Stackelberg strategies yield **24.5% higher defender utility** than Nash equilibrium and **47% improvement** over CVSS-based prioritization.
+5. **Comprehensive Evaluation** – Experiments on 156 real CVEs from the RVD show that Stackelberg strategies yield **24.5% higher defender utility** than Nash equilibrium and **57% improvement** over CVSS-based prioritization.
 6. **Open-Source Release** – GTEF is released as a **production-ready Python package** with 15+ modules, extensive documentation, and >95% test coverage.
 
 **Python Implementation Highlights:**
