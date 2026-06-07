@@ -74,8 +74,6 @@ print(f"Maximin defender utility: {strategy.value:.2f}")
 ```
 ```
 
----
-
 ## 📁 Repository Structure
 
 ```
