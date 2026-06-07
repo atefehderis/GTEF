@@ -1,3 +1,10 @@
+حتماً! در زیر **متن نهایی و اصلاح شده** فایل `README.md` را برای شما آماده کرده‌ام. تمام اصلاحات انجام شده (هماهنگی با مقاله، اصلاح ساختار درختی، استفاده از `MaximinSolver` و ...) در آن اعمال شده است.
+
+شما می‌توانید این متن را کپی کرده و به طور کامل جایگزین فایل `README.md` فعلی خود در مخزن گیت‌هاب کنید.
+
+---
+
+```markdown
 # GTEF: Reproducible Security-Game Patch Prioritization for Robotic Cyber-Physical Systems
 
 This repository contains the official Python implementation of the paper:  
@@ -26,6 +33,7 @@ GTEF provides an **auditable, reproducible pipeline** for strategic patch priori
 ## 📊 Empirical Results (from the paper)
 
 ### Synthetic Benchmark (100 instances, 8 vulns, budget 2)
+
 | Strategy | Expected Loss (↓ better) | vs. CVSS-priority |
 |----------|--------------------------|-------------------|
 | CVSS-priority | 105.5 | — |
@@ -35,6 +43,7 @@ GTEF provides an **auditable, reproducible pipeline** for strategic patch priori
 | **Stackelberg** | **63.0** | **−40%** |
 
 ### Universal Robots Scenario (11 public records, budget 3, 232×139 game)
+
 | Strategy | Expected Loss | Reduction vs. CVSS-priority |
 |----------|---------------|----------------------------|
 | CVSS-priority | 77.9 | — |
@@ -45,6 +54,7 @@ GTEF provides an **auditable, reproducible pipeline** for strategic patch priori
 > Game-theoretic strategies reduce worst-case loss by **34–57%** relative to non-game-theoretic baselines.
 
 ### Solver Scalability
+
 - **Dense games:** LP (HiGHS) faster than Double Oracle at all sizes (1.3s vs 40.8s at 500×500)
 - **Low-rank games (rank 6):** Double Oracle achieves up to **7.6× speedup** at 500×500 with support size 8–9
 
@@ -72,11 +82,12 @@ strategy = solver.solve()
 
 print(f"Maximin defender utility: {strategy.value:.2f}")
 ```
-```
+
+---
 
 ## 📁 Repository Structure
 
-```
+```text
 GTEF/
 ├── gtef/
 │   ├── core/              # Game formulation, payoff matrices, attack graph
@@ -96,12 +107,14 @@ GTEF/
 ## 🔬 Reproducibility
 
 The artifact includes:
+
 - **Fixed random seed** for all stochastic components
 - **Data manifest** listing all public records used (CVE, RVD, vendor advisories)
 - **Environment specification** (conda/pip)
 - **Scripts** to regenerate every table and figure from the paper
 
 All results can be reproduced by running:
+
 ```bash
 python scripts/run_all_experiments.py
 ```
@@ -139,3 +152,6 @@ Apache 2.0
 
 Atefeh Deris – [deris.atefeh@gmail.com](mailto:deris.atefeh@gmail.com)  
 Project Link: [https://github.com/atefehderis/GTEF](https://github.com/atefehderis/GTEF)
+```
+
+---
