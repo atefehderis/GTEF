@@ -57,7 +57,7 @@ pip install gtef
 ```
 
 ```python
-from gtef import SecurityGame, StackelbergSolver
+from gtef import SecurityGame, MaximinSolver
 from gtef.datasets import load_rvd_data
 
 # Load real vulnerability data (Universal Robots scenario)
@@ -66,11 +66,12 @@ vulns = load_rvd_data(platform="ur5")
 # Build security game with budget constraint
 game = SecurityGame.from_vulnerabilities(vulns, budget=3)
 
-# Compute Strong Stackelberg equilibrium
-solver = StackelbergSolver(game)
+# Compute maximin strategy (security strategy via linear programming)
+solver = MaximinSolver(game)
 strategy = solver.solve()
 
-print(f"Optimal defender utility: {strategy.value:.2f}")
+print(f"Maximin defender utility: {strategy.value:.2f}")
+```
 ```
 
 ---
