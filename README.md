@@ -1,6 +1,3 @@
----
-
-```markdown
 # GTEF: Reproducible Security-Game Patch Prioritization for Robotic Cyber-Physical Systems
 
 This repository contains the official Python implementation of the paper:  
