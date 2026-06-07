@@ -146,5 +146,3 @@ Apache 2.0
 Atefeh Deris – [deris.atefeh@gmail.com](mailto:deris.atefeh@gmail.com)  
 Project Link: [https://github.com/atefehderis/GTEF](https://github.com/atefehderis/GTEF)
 ```
-
----
